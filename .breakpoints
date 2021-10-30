@@ -3,9 +3,27 @@
     "main.py": [
       {
         "id": "8f933c3d-b4e1-49f6-b61a-c60e4aec5515",
-        "line": 2,
-        "version": 40,
-        "index": 23
+        "line": 1,
+        "version": 739,
+        "index": 0
+      },
+      {
+        "id": "dc90a884-0a29-4b1e-a5d1-2aa30afb189b",
+        "line": 4,
+        "version": 739,
+        "index": 167
+      },
+      {
+        "id": "3c80e7c0-b9cb-441f-bc89-eef5e6a2e0e1",
+        "line": 8,
+        "version": 739,
+        "index": 290
+      },
+      {
+        "id": "0b64f9e6-3c4b-43d9-8c80-3edb4c58f1d9",
+        "line": 11,
+        "version": 739,
+        "index": 353
       }
     ]
   }
