@@ -1,10 +1,8 @@
 #####################################################
 ## Hacktoberfest 21 project
-## Goal - Learn to use and configure replit change
-##    control for online projects
-##
-## Replit - https://replit.com/
-## Replit Docs - https://bit.ly/3pV67cu
+## 21-1030 - Started game
+## finished start, river, age
+#### TODO: finish game
 #####################################################
 
 import replit
@@ -48,27 +46,30 @@ def edge_of_forest():
 def river():
     replit.clear()
     
-    river_task = "You've just arrived at the river.  Your task is to bring the villagers 5 fish.  What would you like to do? (1/2/3/4): "
+    river_task = input("You've just arrived at the river.  Your task is to bring the villagers 5 fish.  What would you like to do? (1/2/3/4): ")
 
-    print(river_task)
-    river_task_response = input(">")
-
-    if "1" in river_task_response:
-      print("You've caught 6 fish, but ate 3.")
+    if "1" in river_task:
+      print("You swam with the fish and they bit you.")
       time.sleep(2)
-      replit.clear()
-      print(river_task)
-    elif "2" in river_task_response:
-      print("You have just caught 5 fish.  You hold them for the villagers")
-    elif "3" in river_task_response:
-      print("Take a long nap while the fish jump and birds chirp")
-    elif "4" in river_task_response:
-      print("Go back to the edge of the forest")
-      edge_of_forest()
-    else:
-      replit.clear()
-      print(river_task)
+      river()
 
+    elif "2" in river_task:
+      print("You have just caught 5 fish.  You hold them for the villagers")
+      time.sleep(2)
+      river()
+
+    elif "3" in river_task:
+      print("Take a long nap while the fish jump and birds chirp")
+      time.sleep(2)
+      river()
+
+    elif "4" in river_task:
+      print("Go back to the edge of the forest")
+      time.sleep(2)
+      edge_of_forest()
+      
+    else:
+      river()
 def beach():
   print("you are at the beach")
 
