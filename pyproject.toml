@@ -7,6 +7,9 @@ authors = ["c0a3bd <<>>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 replit = "^3.2.4"
+art = "^5.3"
+ipython = "^7.29.0"
+emoji = "^1.6.1"
 
 [tool.poetry.dev-dependencies]
 

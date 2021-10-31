@@ -7,6 +7,7 @@
 
 import replit
 import time
+import emoji
 
 def check_age():
   name = input("What is your name? ")
@@ -18,21 +19,28 @@ def check_age():
   if age >= old_enough_to_play:
     replit.clear()
     print("ok, you're old enough to play")
-    start_game()
+    time.sleep(2)
+    replit.clear()
+    edge_of_forest()
 
   elif age < 0:
     replit.clear()
-    print("Excellent! It's Hacktoberfest so zombies can play too!")
-    start_game()
+    print(emoji.emojize("Excellent! It's Hacktoberfest so zombies can play too! :jack-o-lantern:"))
+
+    time.sleep(2)
+    replit.clear()
+    edge_of_forest()
 
   else:
     replit.clear()
     print("Try again in ", old_enough_to_play - age, 
     "years.")
-    exit()
+    time.sleep(2)
+    replit.clear()
+    start_game()
 
 def start_game():
-  edge_of_forest()
+  check_age()
 
 def edge_of_forest():
     where_to_go = input("You are standing alone at the edge of the forest and need to keep moving.  Where do you want to go? (L/R/U/D): ").lower()
@@ -73,4 +81,4 @@ def river():
 def beach():
   print("you are at the beach")
 
-check_age()
+start_game()
